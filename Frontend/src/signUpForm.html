@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signUpForm</title>
+    <link rel="stylesheet" href="css/loginPage.css">
+    <script type="text/javascript" src="signUpPage.js"></script>
+</head>
+<body class="background">
+<header class="header_home"></header>
+<div class="main-container">
+    <div class="form-container">
+        <div class="content">
+            <form id="signUp-form" action="" class="signup">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <div class="field">
+                    <label>Choose One:</label>
+
+                    <select id="accountType" class="category-dropdown">
+                        <option value="Advisor">Advisor</option>
+                        <option value="Company">Company</option>
+                        <option value="Student">Student</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <input type="text" placeholder="Enter first Name" id="name" required>
+                    <br>
+                    <input id="lastname" type="text" placeholder="Enter Last Name" name="Last Name" required>
+                </div>
+
+                <div class="field">
+                    <input type="text" placeholder="Enter Email" id="email" required>
+                </div>
+
+                <div class="field">
+                    <input type="password" placeholder="Enter Password" id="password" required>
+                    <br>
+                    <input type="password" placeholder="Repeat Password" id="psw-repeat" required>
+                </div>
+
+                <div class="action">
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+                </div>
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn" onclick="window.location.href= 'homePage.html'">Cancel
+                    </button>
+                    <button type="submit" class="signupbtn" >Sign Up
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

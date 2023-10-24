@@ -1,0 +1,41 @@
+Resources:
+  UserTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: "Id"
+          AttributeType: "S"
+        - AttributeName: "email"
+          AttributeType: "S"
+      KeySchema:
+        - AttributeName: "email"
+          KeyType: "HASH"
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+      TableName: "LambdaUserAccounts"
+      GlobalSecondaryIndexes:
+        - IndexName: "IdIndex"  # Define GSI for "Id" attribute
+          KeySchema:
+            - AttributeName: "Id"
+              KeyType: "HASH"
+          Projection:
+            ProjectionType: "ALL"
+          ProvisionedThroughput:
+            ReadCapacityUnits: 5
+            WriteCapacityUnits: 5
+
+            #Resources:
+            #  UserTable:
+            #    Type: AWS::DynamoDB::Table
+            #    Properties:
+            #      "AttributeDefinitions":
+            #        - "AttributeName": "id"
+            #          "AttributeType": "S"
+            #      "KeySchema":
+            #        - "AttributeName": "id"
+            #          "KeyType": "HASH"
+            #      PointInTimeRecoverySpecification:
+            #        PointInTimeRecoveryEnabled: false
+            #      BillingMode: PAY_PER_REQUEST
+            #      TableName: "LambdaUserAccounts"
