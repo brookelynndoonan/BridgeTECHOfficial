@@ -1,6 +1,12 @@
 # BridgeTECH-Official-Project
 
-This is a project built buy Jess Thompson, Sha'mir Willis, Megan Flaherty and Brooke-Lynn Doonan
+This is a project built by Jess Thompson, Sha'mir Willis, Megan Flaherty and Brooke-Lynn Doonan
+
+---------We need to pluck through this, to see what we want to exclude and what we want to add to our 'Read Me'. Maybe a description of the project.------
+
+
+
+
 
 ### Fill out the environment variables
 Complete `setupEnvironment.sh` with the group repo name and the github username of the team member holding the repo.
