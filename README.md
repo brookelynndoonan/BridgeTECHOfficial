@@ -1,6 +1,6 @@
-# ATA-Capstone-Project
+# BridgeTECH-Official-Project
 
-Follow the instructions in the course for completing the group Capstone project.
+This is a project built buy Jess Thompson, Sha'mir Willis, Megan Flaherty and Brooke-Lynn Doonan
 
 ### Fill out the environment variables
 Complete `setupEnvironment.sh` with the group repo name and the github username of the team member holding the repo.
